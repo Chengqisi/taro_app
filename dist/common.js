@@ -1,2 +1,1 @@
-(wx["webpackJsonp"] = wx["webpackJsonp"] || []).push([["common"],[]]);
-//# sourceMappingURL=common.js.map
+(wx["webpackJsonp"]=wx["webpackJsonp"]||[]).push([[3],[]]);
