@@ -1,0 +1,6 @@
+Page {
+  background-color: #f2f2f2;
+}
+
+
+@import "./common.wxss";

@@ -1,0 +1,13 @@
+{
+  "miniprogramRoot": "./",
+  "projectname": "myApp",
+  "description": "cheese",
+  "appid": "wx15bbd1420de1209e",
+  "setting": {
+    "urlCheck": true,
+    "es6": false,
+    "postcss": false,
+    "minified": false
+  },
+  "compileType": "miniprogram"
+}

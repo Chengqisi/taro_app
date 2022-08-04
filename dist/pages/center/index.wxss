@@ -1,0 +1,70 @@
+Page {
+  background-color: #f2f2f2;
+}
+.head {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-justify-content: flex-start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  padding: 40rpx;
+}
+.head .head_img {
+  width: 140rpx;
+  height: 140rpx;
+  border-radius: 140rpx;
+  margin-right: 40rpx;
+}
+.head .head_img Image {
+  width: 140rpx;
+  height: 140rpx;
+}
+.head .head_num {
+  font-size: 36rpx;
+  font-family: 500;
+}
+Button {
+  padding: 0;
+  margin: 0;
+}
+.content {
+  max-width: 80vw;
+  background-color: #fff;
+  margin: auto;
+  border-radius: 16rpx;
+  padding: 20rpx 30rpx;
+}
+.card {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: auto;
+  padding: 20rpx 0;
+  border-bottom: 1rpx solid #e7e7e7;
+}
+.card Image {
+  width: 15rpx;
+  height: 12rpx;
+  margin-right: 20rpx;
+}
+.card:nth-last-of-type(1) {
+  border-bottom: none;
+}
+.foot {
+  text-align: center;
+  color: #666;
+  font-size: 26rpx;
+  margin-top: 30rpx;
+}
+
