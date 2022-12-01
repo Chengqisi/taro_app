@@ -1,6 +1,19 @@
 Page {
   background-color: #f2f2f2;
 }
+.title {
+  color: #000;
+  font-size: 30rpx;
+  padding: 10rpx 0;
+}
+.article {
+  color: #666;
+  font-size: 26rpx;
+  line-height: 30rpx;
+  white-space: 2;
+  padding: 10rpx 0;
+}
 
 
 @import "./common.wxss";
+@import "./taro.wxss";

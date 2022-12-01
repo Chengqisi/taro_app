@@ -8960,6 +8960,17 @@ function equipCommonApis(taro, global) {
 
 /***/ }),
 
+/***/ "./node_modules/@tarojs/taro/html5.css":
+/*!*********************************************!*\
+  !*** ./node_modules/@tarojs/taro/html5.css ***!
+  \*********************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+// extracted by mini-css-extract-plugin
+
+/***/ }),
+
 /***/ "./node_modules/@tarojs/taro/index.js":
 /*!********************************************!*\
   !*** ./node_modules/@tarojs/taro/index.js ***!

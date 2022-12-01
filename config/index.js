@@ -53,9 +53,7 @@ const config = {
       },
     },
   },
-  plugins: [
-    '@tarojs/plugin-indie'
-  ] 
+  plugins: ['@tarojs/plugin-indie']
 };
 
 module.exports = function (merge) {

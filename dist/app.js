@@ -22,6 +22,9 @@ require("./taro");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_4__);
 /* harmony import */ var _app_less__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./app.less */ "./src/app.less");
 /* harmony import */ var _app_less__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(_app_less__WEBPACK_IMPORTED_MODULE_5__);
+/* harmony import */ var _tarojs_taro_html5_css__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! @tarojs/taro/html5.css */ "./node_modules/@tarojs/taro/html5.css");
+/* harmony import */ var _tarojs_taro_html5_css__WEBPACK_IMPORTED_MODULE_6___default = /*#__PURE__*/__webpack_require__.n(_tarojs_taro_html5_css__WEBPACK_IMPORTED_MODULE_6__);
+
 
 
 
@@ -6220,7 +6223,7 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
-var config = {"pages":["pages/index/index","pages/center/index","pages/answer/index","pages/login/index","pages/webview/index"],"subpackages":[{"root":"other_page","pages":["javascript/index","typescripts/index"]}],"window":{"backgroundTextStyle":"light","navigationBarBackgroundColor":"#fff","navigationBarTitleText":"WeChat","navigationBarTextStyle":"black"},"tabBar":{"list":[{"pagePath":"pages/index/index","text":"首页","iconPath":"imgs/my-main.png","selectedIconPath":"imgs/my-main-act.png"},{"pagePath":"pages/answer/index","text":"问答","iconPath":"imgs/answer.png","selectedIconPath":"imgs/answer_select.png"},{"pagePath":"pages/center/index","text":"个人中心","iconPath":"imgs/my-tab.png","selectedIconPath":"imgs/my-tab-act.png"}],"color":"#666","selectedColor":"#000","borderStyle":"black"}};
+var config = {"pages":["pages/index/index","pages/center/index","pages/answer/index","pages/login/index","pages/webview/index"],"subpackages":[{"root":"other_page","pages":["javascript/index","typescripts/index"]},{"root":"sub_javascript","__desc":"javascript","pages":["database/index","complexdata/index"]}],"window":{"backgroundTextStyle":"light","navigationBarBackgroundColor":"#fff","navigationBarTitleText":"WeChat","navigationBarTextStyle":"black"},"tabBar":{"list":[{"pagePath":"pages/index/index","text":"首页","iconPath":"imgs/my-main.png","selectedIconPath":"imgs/my-main-act.png"},{"pagePath":"pages/answer/index","text":"问答","iconPath":"imgs/answer.png","selectedIconPath":"imgs/answer_select.png"},{"pagePath":"pages/center/index","text":"个人中心","iconPath":"imgs/my-tab.png","selectedIconPath":"imgs/my-tab-act.png"}],"color":"#666","selectedColor":"#000","borderStyle":"black"}};
 _tarojs_runtime__WEBPACK_IMPORTED_MODULE_1__["window"].__taroAppConfig = config
 var inst = App(Object(_tarojs_plugin_framework_react_dist_runtime__WEBPACK_IMPORTED_MODULE_2__[/* createReactApp */ "a"])(_node_modules_babel_loader_lib_index_js_app_ts__WEBPACK_IMPORTED_MODULE_4__[/* default */ "a"], react__WEBPACK_IMPORTED_MODULE_5__, react_dom__WEBPACK_IMPORTED_MODULE_6__[/* default */ "a"], config))
 

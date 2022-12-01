@@ -1,5 +1,6 @@
 import { Component } from "react";
 import "./app.less";
+import '@tarojs/taro/html5.css'
 class App extends Component {
   componentDidMount() {}
 

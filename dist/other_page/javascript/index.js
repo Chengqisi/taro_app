@@ -16,89 +16,19 @@
 
 
 
-
 function JavaSciptMoudle() {
-  return /*#__PURE__*/Object(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__["jsxs"])(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__["Fragment"], {
-    children: [/*#__PURE__*/Object(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__["jsx"])(_components_accordion_index__WEBPACK_IMPORTED_MODULE_0__[/* default */ "a"], {
-      title: "\u6570\u636E\u7C7B\u578B1",
-      open: false
-    }), /*#__PURE__*/Object(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__["jsx"])(_components_accordion_index__WEBPACK_IMPORTED_MODULE_0__[/* default */ "a"], {
-      title: "\u6570\u636E\u7C7B\u578B2",
-      open: false
-    })]
-  });
-}
-
-/***/ }),
-
-/***/ "./node_modules/taro-ui/dist/style/components/accordion.scss":
-/*!*******************************************************************!*\
-  !*** ./node_modules/taro-ui/dist/style/components/accordion.scss ***!
-  \*******************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-// extracted by mini-css-extract-plugin
-
-/***/ }),
-
-/***/ "./src/components/accordion/index.tsx":
-/*!********************************************!*\
-  !*** ./src/components/accordion/index.tsx ***!
-  \********************************************/
-/*! exports provided: default */
-/*! exports used: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return Accordion; });
-/* harmony import */ var _Users_chengqisi_Desktop_cheese_tarodemo_node_modules_babel_runtime_helpers_esm_slicedToArray_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./node_modules/@babel/runtime/helpers/esm/slicedToArray.js */ "./node_modules/@babel/runtime/helpers/esm/slicedToArray.js");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react */ "./node_modules/react/cjs/react.production.min.js");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var _tarojs_components__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @tarojs/components */ "./node_modules/@tarojs/plugin-platform-weapp/dist/components-react.js");
-/* harmony import */ var taro_ui__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! taro-ui */ "./node_modules/taro-ui/dist/index.umd.js");
-/* harmony import */ var taro_ui__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(taro_ui__WEBPACK_IMPORTED_MODULE_3__);
-/* harmony import */ var taro_ui_dist_style_components_accordion_scss__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! taro-ui/dist/style/components/accordion.scss */ "./node_modules/taro-ui/dist/style/components/accordion.scss");
-/* harmony import */ var taro_ui_dist_style_components_accordion_scss__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(taro_ui_dist_style_components_accordion_scss__WEBPACK_IMPORTED_MODULE_4__);
-/* harmony import */ var taro_ui_dist_style_components_icon_scss__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! taro-ui/dist/style/components/icon.scss */ "./node_modules/taro-ui/dist/style/components/icon.scss");
-/* harmony import */ var taro_ui_dist_style_components_icon_scss__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(taro_ui_dist_style_components_icon_scss__WEBPACK_IMPORTED_MODULE_5__);
-/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! react/jsx-runtime */ "./node_modules/react/cjs/react-jsx-runtime.production.min.js");
-/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6___default = /*#__PURE__*/__webpack_require__.n(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__);
-
-
-
-
-
-
-
-
-function Accordion(props) {
-  var _useState = Object(react__WEBPACK_IMPORTED_MODULE_1__["useState"])(props.open),
-      _useState2 = Object(_Users_chengqisi_Desktop_cheese_tarodemo_node_modules_babel_runtime_helpers_esm_slicedToArray_js__WEBPACK_IMPORTED_MODULE_0__[/* default */ "a"])(_useState, 2),
-      open = _useState2[0],
-      setOpen = _useState2[1]; // const handleClick = function (value) {
-  //     setOpen(!open)
-  // }
-
-
-  function openAccord() {
-    setOpen(!open);
-  }
-
-  return /*#__PURE__*/Object(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__["jsx"])(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__["Fragment"], {
-    children: /*#__PURE__*/Object(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__["jsx"])(taro_ui__WEBPACK_IMPORTED_MODULE_3__["AtAccordion"], {
-      open: open,
-      title: props.title,
-      onClick: openAccord,
-      customStyle: {
-        'background': "#fff"
-      },
-      children: /*#__PURE__*/Object(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__["jsx"])(taro_ui__WEBPACK_IMPORTED_MODULE_3__["AtList"], {
-        hasBorder: true,
-        children: /*#__PURE__*/Object(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__["jsx"])(_tarojs_components__WEBPACK_IMPORTED_MODULE_2__["View"], {
-          children: "123"
-        })
-      })
+  var databaseList = [{
+    name: '基本数据类型',
+    url: '/sub_javascript/database/index'
+  }, {
+    name: '复杂数据类型',
+    url: "/sub_javascript/complexdata/index"
+  }];
+  return /*#__PURE__*/Object(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__["jsx"])(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__["Fragment"], {
+    children: /*#__PURE__*/Object(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__["jsx"])(_components_accordion_index__WEBPACK_IMPORTED_MODULE_0__[/* default */ "a"], {
+      title: "\u6570\u636E\u7C7B\u578B",
+      open: false,
+      list: databaseList
     })
   });
 }

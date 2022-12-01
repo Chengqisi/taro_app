@@ -10,6 +10,11 @@ export default {
     {
       root: "other_page",
       pages: ["javascript/index","typescripts/index"]
+    },
+    {
+      root:"sub_javascript",
+      __desc:"javascript",
+      pages:["database/index","complexdata/index"]
     }
   ],
   window: {
