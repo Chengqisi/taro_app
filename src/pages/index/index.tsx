@@ -1,7 +1,5 @@
 import React, { useCallback, useState } from "react";
-import { View, Text, Button, Image, ScrollView } from "@tarojs/components";
-import { useEnv, useNavigationBar, useModal, useToast, } from "taro-hooks"
-import Taro from '@tarojs/taro'
+import { View, Text, Button, Image, ScrollView, RichText } from "@tarojs/components";
 import HomeCard from "../../components/homeCard/index";
 import "taro-ui/dist/style/components/nav-bar.scss";
 import "taro-ui/dist/style/components/icon.scss";

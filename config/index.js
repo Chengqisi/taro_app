@@ -35,6 +35,8 @@ const config = {
         },
       },
     },
+    plugins:['@tarojs/plugin-html']
+
   },
   h5: {
     publicPath: "/",

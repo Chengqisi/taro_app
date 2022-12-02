@@ -15787,10 +15787,10 @@ exports.version = "17.0.2";
 
 /***/ }),
 
-/***/ "./node_modules/taro-ui/dist/style/components/accordion.scss":
-/*!*******************************************************************!*\
-  !*** ./node_modules/taro-ui/dist/style/components/accordion.scss ***!
-  \*******************************************************************/
+/***/ "./node_modules/taro-ui/dist/style/components/card.scss":
+/*!**************************************************************!*\
+  !*** ./node_modules/taro-ui/dist/style/components/card.scss ***!
+  \**************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
