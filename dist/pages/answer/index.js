@@ -18,10 +18,14 @@
 /* harmony import */ var taro_ui__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(taro_ui__WEBPACK_IMPORTED_MODULE_3__);
 /* harmony import */ var taro_ui_dist_style_components_tabs_scss__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! taro-ui/dist/style/components/tabs.scss */ "./node_modules/taro-ui/dist/style/components/tabs.scss");
 /* harmony import */ var taro_ui_dist_style_components_tabs_scss__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(taro_ui_dist_style_components_tabs_scss__WEBPACK_IMPORTED_MODULE_4__);
-/* harmony import */ var _index_less__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./index.less */ "./src/pages/answer/index.less");
-/* harmony import */ var _index_less__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(_index_less__WEBPACK_IMPORTED_MODULE_5__);
-/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! react/jsx-runtime */ "./node_modules/react/cjs/react-jsx-runtime.production.min.js");
-/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6___default = /*#__PURE__*/__webpack_require__.n(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__);
+/* harmony import */ var taro_ui_dist_style_components_list_scss__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! taro-ui/dist/style/components/list.scss */ "./node_modules/taro-ui/dist/style/components/list.scss");
+/* harmony import */ var taro_ui_dist_style_components_list_scss__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(taro_ui_dist_style_components_list_scss__WEBPACK_IMPORTED_MODULE_5__);
+/* harmony import */ var _index_less__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./index.less */ "./src/pages/answer/index.less");
+/* harmony import */ var _index_less__WEBPACK_IMPORTED_MODULE_6___default = /*#__PURE__*/__webpack_require__.n(_index_less__WEBPACK_IMPORTED_MODULE_6__);
+/* harmony import */ var _tarojs_taro__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! @tarojs/taro */ "./node_modules/@tarojs/taro/index.js");
+/* harmony import */ var _tarojs_taro__WEBPACK_IMPORTED_MODULE_7___default = /*#__PURE__*/__webpack_require__.n(_tarojs_taro__WEBPACK_IMPORTED_MODULE_7__);
+/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! react/jsx-runtime */ "./node_modules/react/cjs/react-jsx-runtime.production.min.js");
+/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8___default = /*#__PURE__*/__webpack_require__.n(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__);
 
 
  // import logo from "./hook.png";
@@ -32,13 +36,15 @@
 
 
 
+
+
 function Index() {
   var _useState = Object(react__WEBPACK_IMPORTED_MODULE_1__["useState"])([{
-    title: 'tab1'
+    title: '原生JS'
   }, {
-    title: "tab2"
+    title: "面试题"
   }, {
-    title: "tab3"
+    title: "性能优化"
   }]),
       _useState2 = Object(_Users_chengqisi_Desktop_cheese_tarodemo_node_modules_babel_runtime_helpers_esm_slicedToArray_js__WEBPACK_IMPORTED_MODULE_0__[/* default */ "a"])(_useState, 2),
       tabList = _useState2[0],
@@ -53,36 +59,62 @@ function Index() {
     setCurrent(tab);
   };
 
-  return /*#__PURE__*/Object(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__["jsx"])(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__["Fragment"], {
-    children: /*#__PURE__*/Object(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__["jsxs"])(taro_ui__WEBPACK_IMPORTED_MODULE_3__["AtTabs"], {
+  return /*#__PURE__*/Object(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__["jsx"])(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__["Fragment"], {
+    children: /*#__PURE__*/Object(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__["jsxs"])(taro_ui__WEBPACK_IMPORTED_MODULE_3__["AtTabs"], {
       current: current,
       tabList: tabList,
       onClick: tabSwitch,
-      children: [/*#__PURE__*/Object(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__["jsx"])(taro_ui__WEBPACK_IMPORTED_MODULE_3__["AtTabsPane"], {
+      children: [/*#__PURE__*/Object(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__["jsx"])(taro_ui__WEBPACK_IMPORTED_MODULE_3__["AtTabsPane"], {
         current: current,
         index: 0,
-        children: /*#__PURE__*/Object(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__["jsx"])(_tarojs_components__WEBPACK_IMPORTED_MODULE_2__["View"], {
-          style: "padding: 100px 50px;background-color: #FAFBFC;text-align: center;",
-          children: "\u6807\u7B7E\u9875\u4E00\u7684\u5185\u5BB9"
+        children: /*#__PURE__*/Object(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__["jsxs"])(taro_ui__WEBPACK_IMPORTED_MODULE_3__["AtList"], {
+          children: [/*#__PURE__*/Object(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__["jsx"])(taro_ui__WEBPACK_IMPORTED_MODULE_3__["AtListItem"], {
+            title: "\u5B9E\u73B0\u7B80\u5355\u7684\u62D6\u62FD\u6548\u679C",
+            arrow: "right",
+            onClick: function onClick() {
+              _tarojs_taro__WEBPACK_IMPORTED_MODULE_7___default.a.navigateTo({
+                url: '/sub_study/dragDemo/index'
+              });
+            }
+          }), /*#__PURE__*/Object(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__["jsx"])(taro_ui__WEBPACK_IMPORTED_MODULE_3__["AtListItem"], {
+            title: "\u5B9E\u73B0\u7B80\u5355\u7684\u653E\u5927\u955C\u6548\u679C",
+            arrow: "right",
+            onClick: function onClick() {
+              _tarojs_taro__WEBPACK_IMPORTED_MODULE_7___default.a.navigateTo({
+                url: '/sub_study/enlarge/index'
+              });
+            }
+          })]
         })
-      }), /*#__PURE__*/Object(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__["jsx"])(taro_ui__WEBPACK_IMPORTED_MODULE_3__["AtTabsPane"], {
+      }), /*#__PURE__*/Object(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__["jsx"])(taro_ui__WEBPACK_IMPORTED_MODULE_3__["AtTabsPane"], {
         current: current,
         index: 1,
-        children: /*#__PURE__*/Object(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__["jsx"])(_tarojs_components__WEBPACK_IMPORTED_MODULE_2__["View"], {
+        children: /*#__PURE__*/Object(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__["jsx"])(_tarojs_components__WEBPACK_IMPORTED_MODULE_2__["View"], {
           style: "padding: 100px 50px;background-color: #FAFBFC;text-align: center;",
-          children: "\u6807\u7B7E\u9875\u4E8C\u7684\u5185\u5BB9"
+          children: "\u52AA\u529B\u66F4\u65B0\u4E2D\u3002\u3002\u3002"
         })
-      }), /*#__PURE__*/Object(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__["jsx"])(taro_ui__WEBPACK_IMPORTED_MODULE_3__["AtTabsPane"], {
+      }), /*#__PURE__*/Object(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__["jsx"])(taro_ui__WEBPACK_IMPORTED_MODULE_3__["AtTabsPane"], {
         current: current,
         index: 2,
-        children: /*#__PURE__*/Object(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__["jsx"])(_tarojs_components__WEBPACK_IMPORTED_MODULE_2__["View"], {
+        children: /*#__PURE__*/Object(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__["jsx"])(_tarojs_components__WEBPACK_IMPORTED_MODULE_2__["View"], {
           style: "padding: 100px 50px;background-color: #FAFBFC;text-align: center;",
-          children: "\u6807\u7B7E\u9875\u4E09\u7684\u5185\u5BB9"
+          children: "\u52AA\u529B\u66F4\u65B0\u4E2D\u3002\u3002\u3002"
         })
       })]
     })
   });
 }
+
+/***/ }),
+
+/***/ "./node_modules/taro-ui/dist/style/components/list.scss":
+/*!**************************************************************!*\
+  !*** ./node_modules/taro-ui/dist/style/components/list.scss ***!
+  \**************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+// extracted by mini-css-extract-plugin
 
 /***/ }),
 

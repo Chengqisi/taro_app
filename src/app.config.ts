@@ -9,12 +9,25 @@ export default {
   subpackages: [
     {
       root: "other_page",
-      pages: ["javascript/index","typescripts/index"]
+      pages: ["javascript/index", "typescripts/index"]
     },
     {
-      root:"sub_javascript",
-      __desc:"javascript",
-      pages:["database/index","complexdata/index"]
+      root: "sub_javascript",
+      __desc: "javascript",
+      pages: ["database/index", "complexdata/index"]
+    },
+    {
+      root: 'sub_webView',
+      __desc: "webView",
+      pages: ["index"]
+    },
+    {
+      root: "sub_study",
+      __desc: "相关学习demo",
+      pages: [
+        "dragDemo/index",
+        "enlarge/index"
+      ]
     }
   ],
   window: {
@@ -24,7 +37,7 @@ export default {
     navigationBarTextStyle: "black",
     // navigationStyle: "custom",
   },
-  
+
   tabBar: {
     list: [
       {
@@ -35,7 +48,7 @@ export default {
       },
       {
         pagePath: "pages/answer/index",
-        text: "问答",
+        text: "学习",
         iconPath: "imgs/answer.png",
         selectedIconPath: "imgs/answer_select.png"
       },

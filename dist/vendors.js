@@ -4640,7 +4640,7 @@ exports.version = "17.0.2";
   !*** ./node_modules/taro-ui/dist/index.umd.js ***!
   \************************************************/
 /*! no static exports found */
-/*! exports used: AtAccordion, AtCard, AtList, AtTabs, AtTabsPane */
+/*! exports used: AtAccordion, AtCard, AtList, AtListItem, AtTabs, AtTabsPane */
 /***/ (function(module, exports, __webpack_require__) {
 
 /* WEBPACK VAR INJECTION */(function(window, global, document) {var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;var _typeof = __webpack_require__(/*! ./node_modules/@babel/runtime/helpers/typeof.js */ "./node_modules/@babel/runtime/helpers/typeof.js").default;

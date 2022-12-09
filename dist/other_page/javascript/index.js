@@ -16,6 +16,7 @@
 
 
 
+
 function JavaSciptMoudle() {
   var databaseList = [{
     name: '基本数据类型',
@@ -24,12 +25,24 @@ function JavaSciptMoudle() {
     name: '复杂数据类型',
     url: "/sub_javascript/complexdata/index"
   }];
-  return /*#__PURE__*/Object(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__["jsx"])(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__["Fragment"], {
-    children: /*#__PURE__*/Object(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__["jsx"])(_components_accordion_index__WEBPACK_IMPORTED_MODULE_0__[/* default */ "a"], {
+  return /*#__PURE__*/Object(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__["jsxs"])(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__["Fragment"], {
+    children: [/*#__PURE__*/Object(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__["jsx"])(_components_accordion_index__WEBPACK_IMPORTED_MODULE_0__[/* default */ "a"], {
       title: "\u6570\u636E\u7C7B\u578B",
       open: false,
       list: databaseList
-    })
+    }), /*#__PURE__*/Object(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__["jsx"])(_components_accordion_index__WEBPACK_IMPORTED_MODULE_0__[/* default */ "a"], {
+      title: "\u51FD\u6570",
+      open: false,
+      list: databaseList
+    }), /*#__PURE__*/Object(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__["jsx"])(_components_accordion_index__WEBPACK_IMPORTED_MODULE_0__[/* default */ "a"], {
+      title: "\u4F5C\u7528\u57DF",
+      open: false,
+      list: databaseList
+    }), /*#__PURE__*/Object(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__["jsx"])(_components_accordion_index__WEBPACK_IMPORTED_MODULE_0__[/* default */ "a"], {
+      title: "\u539F\u578B\u94FE",
+      open: false,
+      list: databaseList
+    })]
   });
 }
 

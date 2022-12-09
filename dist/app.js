@@ -24,6 +24,9 @@ require("./taro");
 /* harmony import */ var _app_less__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(_app_less__WEBPACK_IMPORTED_MODULE_5__);
 /* harmony import */ var _tarojs_taro_html5_css__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! @tarojs/taro/html5.css */ "./node_modules/@tarojs/taro/html5.css");
 /* harmony import */ var _tarojs_taro_html5_css__WEBPACK_IMPORTED_MODULE_6___default = /*#__PURE__*/__webpack_require__.n(_tarojs_taro_html5_css__WEBPACK_IMPORTED_MODULE_6__);
+/* harmony import */ var _tarojs_taro__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! @tarojs/taro */ "./node_modules/@tarojs/taro/index.js");
+/* harmony import */ var _tarojs_taro__WEBPACK_IMPORTED_MODULE_7___default = /*#__PURE__*/__webpack_require__.n(_tarojs_taro__WEBPACK_IMPORTED_MODULE_7__);
+
 
 
 
@@ -44,17 +47,26 @@ var App = /*#__PURE__*/function (_Component) {
   }
 
   Object(_Users_chengqisi_Desktop_cheese_tarodemo_node_modules_babel_runtime_helpers_esm_createClass_js__WEBPACK_IMPORTED_MODULE_1__[/* default */ "a"])(App, [{
-    key: "componentDidMount",
-    value: function componentDidMount() {}
-  }, {
-    key: "componentDidShow",
-    value: function componentDidShow() {}
-  }, {
-    key: "componentDidHide",
-    value: function componentDidHide() {}
-  }, {
-    key: "componentDidCatchError",
-    value: function componentDidCatchError() {} // this.props.children 是将要会渲染的页面
+    key: "onLaunch",
+    value: function onLaunch() {
+      var updateManager = _tarojs_taro__WEBPACK_IMPORTED_MODULE_7___default.a.getUpdateManager();
+      updateManager.onCheckForUpdate(function (res) {
+        // 请求完新版本信息的回调
+        console.log(res.hasUpdate);
+      });
+      updateManager.onUpdateReady(function () {
+        _tarojs_taro__WEBPACK_IMPORTED_MODULE_7___default.a.showModal({
+          title: '更新提示',
+          content: '新版本已经准备好，是否重启应用？',
+          success: function success(res) {
+            if (res.confirm) {
+              // 新的版本已经下载好，调用 applyUpdate 应用新版本并重启
+              updateManager.applyUpdate();
+            }
+          }
+        });
+      });
+    } // this.props.children 是将要会渲染的页面
 
   }, {
     key: "render",
@@ -6223,7 +6235,7 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
-var config = {"pages":["pages/index/index","pages/center/index","pages/answer/index","pages/login/index","pages/webview/index"],"subpackages":[{"root":"other_page","pages":["javascript/index","typescripts/index"]},{"root":"sub_javascript","__desc":"javascript","pages":["database/index","complexdata/index"]}],"window":{"backgroundTextStyle":"light","navigationBarBackgroundColor":"#fff","navigationBarTitleText":"WeChat","navigationBarTextStyle":"black"},"tabBar":{"list":[{"pagePath":"pages/index/index","text":"首页","iconPath":"imgs/my-main.png","selectedIconPath":"imgs/my-main-act.png"},{"pagePath":"pages/answer/index","text":"问答","iconPath":"imgs/answer.png","selectedIconPath":"imgs/answer_select.png"},{"pagePath":"pages/center/index","text":"个人中心","iconPath":"imgs/my-tab.png","selectedIconPath":"imgs/my-tab-act.png"}],"color":"#666","selectedColor":"#000","borderStyle":"black"}};
+var config = {"pages":["pages/index/index","pages/center/index","pages/answer/index","pages/login/index","pages/webview/index"],"subpackages":[{"root":"other_page","pages":["javascript/index","typescripts/index"]},{"root":"sub_javascript","__desc":"javascript","pages":["database/index","complexdata/index"]},{"root":"sub_webView","__desc":"webView","pages":["index"]},{"root":"sub_study","__desc":"相关学习demo","pages":["dragDemo/index","enlarge/index"]}],"window":{"backgroundTextStyle":"light","navigationBarBackgroundColor":"#fff","navigationBarTitleText":"WeChat","navigationBarTextStyle":"black"},"tabBar":{"list":[{"pagePath":"pages/index/index","text":"首页","iconPath":"imgs/my-main.png","selectedIconPath":"imgs/my-main-act.png"},{"pagePath":"pages/answer/index","text":"学习","iconPath":"imgs/answer.png","selectedIconPath":"imgs/answer_select.png"},{"pagePath":"pages/center/index","text":"个人中心","iconPath":"imgs/my-tab.png","selectedIconPath":"imgs/my-tab-act.png"}],"color":"#666","selectedColor":"#000","borderStyle":"black"}};
 _tarojs_runtime__WEBPACK_IMPORTED_MODULE_1__["window"].__taroAppConfig = config
 var inst = App(Object(_tarojs_plugin_framework_react_dist_runtime__WEBPACK_IMPORTED_MODULE_2__[/* createReactApp */ "a"])(_node_modules_babel_loader_lib_index_js_app_ts__WEBPACK_IMPORTED_MODULE_4__[/* default */ "a"], react__WEBPACK_IMPORTED_MODULE_5__, react_dom__WEBPACK_IMPORTED_MODULE_6__[/* default */ "a"], config))
 
