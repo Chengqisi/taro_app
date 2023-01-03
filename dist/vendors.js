@@ -15809,6 +15809,28 @@ exports.version = "17.0.2";
 
 /***/ }),
 
+/***/ "./node_modules/taro-ui/dist/style/components/list.scss":
+/*!**************************************************************!*\
+  !*** ./node_modules/taro-ui/dist/style/components/list.scss ***!
+  \**************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+// extracted by mini-css-extract-plugin
+
+/***/ }),
+
+/***/ "./node_modules/taro-ui/dist/style/components/tabs.scss":
+/*!**************************************************************!*\
+  !*** ./node_modules/taro-ui/dist/style/components/tabs.scss ***!
+  \**************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+// extracted by mini-css-extract-plugin
+
+/***/ }),
+
 /***/ "./node_modules/webpack/buildin/global.js":
 /*!***********************************!*\
   !*** (webpack)/buildin/global.js ***!

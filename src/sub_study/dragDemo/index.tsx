@@ -6,8 +6,8 @@ import "taro-ui/dist/style/components/card.scss";
 export default function DragDemo() {
     return <>
         <AtCard title='如何使用原生Js实现一个元素拖拽'>
-            <View className="article"> 1、首先将一个元素进行定位      </View>
-            <View className="article"> 2、监听鼠标的事件    </View>
+            <View className="article">1、首先将一个元素进行定位</View>
+            <View className="article">2、监听鼠标的事件</View>
             <View className="article">3、鼠标按下后监听鼠标的移动事件、根据鼠标的移动位置改变元素的定位</View>
             <View className="article">4、鼠标放开后清除事件</View>
             <CodeHtml isReplace={true} code={`

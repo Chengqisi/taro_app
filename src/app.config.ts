@@ -28,6 +28,14 @@ export default {
         "dragDemo/index",
         "enlarge/index"
       ]
+    },
+    {
+      root:"sub_interview",
+      __desc:"面试题",
+      pages:[
+        "closure/index",
+        "function/index"
+      ]
     }
   ],
   window: {

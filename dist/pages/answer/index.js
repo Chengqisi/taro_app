@@ -89,9 +89,32 @@ function Index() {
       }), /*#__PURE__*/Object(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__["jsx"])(taro_ui__WEBPACK_IMPORTED_MODULE_3__["AtTabsPane"], {
         current: current,
         index: 1,
-        children: /*#__PURE__*/Object(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__["jsx"])(_tarojs_components__WEBPACK_IMPORTED_MODULE_2__["View"], {
-          style: "padding: 100px 50px;background-color: #FAFBFC;text-align: center;",
-          children: "\u52AA\u529B\u66F4\u65B0\u4E2D\u3002\u3002\u3002"
+        children: /*#__PURE__*/Object(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__["jsxs"])(taro_ui__WEBPACK_IMPORTED_MODULE_3__["AtList"], {
+          children: [/*#__PURE__*/Object(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__["jsx"])(taro_ui__WEBPACK_IMPORTED_MODULE_3__["AtListItem"], {
+            title: "\u95ED\u5305",
+            arrow: "right",
+            onClick: function onClick() {
+              _tarojs_taro__WEBPACK_IMPORTED_MODULE_7___default.a.navigateTo({
+                url: '/sub_interview/closure/index'
+              });
+            }
+          }), /*#__PURE__*/Object(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__["jsx"])(taro_ui__WEBPACK_IMPORTED_MODULE_3__["AtListItem"], {
+            title: "\u539F\u578B\u94FE",
+            arrow: "right",
+            onClick: function onClick() {
+              _tarojs_taro__WEBPACK_IMPORTED_MODULE_7___default.a.navigateTo({
+                url: '/sub_study/enlarge/index'
+              });
+            }
+          }), /*#__PURE__*/Object(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__["jsx"])(taro_ui__WEBPACK_IMPORTED_MODULE_3__["AtListItem"], {
+            title: "\u9AD8\u9891\u624B\u5199\u51FD\u6570",
+            arrow: "right",
+            onClick: function onClick() {
+              _tarojs_taro__WEBPACK_IMPORTED_MODULE_7___default.a.navigateTo({
+                url: '/sub_interview/function/index'
+              });
+            }
+          })]
         })
       }), /*#__PURE__*/Object(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__["jsx"])(taro_ui__WEBPACK_IMPORTED_MODULE_3__["AtTabsPane"], {
         current: current,
@@ -104,28 +127,6 @@ function Index() {
     })
   });
 }
-
-/***/ }),
-
-/***/ "./node_modules/taro-ui/dist/style/components/list.scss":
-/*!**************************************************************!*\
-  !*** ./node_modules/taro-ui/dist/style/components/list.scss ***!
-  \**************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-// extracted by mini-css-extract-plugin
-
-/***/ }),
-
-/***/ "./node_modules/taro-ui/dist/style/components/tabs.scss":
-/*!**************************************************************!*\
-  !*** ./node_modules/taro-ui/dist/style/components/tabs.scss ***!
-  \**************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-// extracted by mini-css-extract-plugin
 
 /***/ }),
 
@@ -164,5 +165,5 @@ var inst = Page(Object(_tarojs_runtime__WEBPACK_IMPORTED_MODULE_0__["createPageC
 
 /***/ })
 
-},[["./src/pages/answer/index.tsx","runtime","taro","vendors"]]]);
+},[["./src/pages/answer/index.tsx","runtime","taro","vendors","common"]]]);
 //# sourceMappingURL=index.js.map

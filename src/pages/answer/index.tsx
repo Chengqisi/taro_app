@@ -22,7 +22,11 @@ export default function Index() {
                 </AtList>
             </AtTabsPane>
             <AtTabsPane current={current} index={1}>
-                <View style='padding: 100px 50px;background-color: #FAFBFC;text-align: center;'>努力更新中。。。</View>
+                <AtList>
+                    <AtListItem title='闭包' arrow='right' onClick={() => { Taro.navigateTo({ url: '/sub_interview/closure/index' }) }} />
+                    <AtListItem title='原型链' arrow='right' onClick={() => { Taro.navigateTo({ url: '/sub_study/enlarge/index' }) }} />
+                    <AtListItem title='高频手写函数' arrow='right' onClick={() => { Taro.navigateTo({ url: '/sub_interview/function/index' }) }} />
+                </AtList>
             </AtTabsPane>
             <AtTabsPane current={current} index={2}>
                 <View style='padding: 100px 50px;background-color: #FAFBFC;text-align: center;'>努力更新中。。。</View>

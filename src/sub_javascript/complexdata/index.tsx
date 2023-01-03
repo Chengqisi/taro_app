@@ -32,7 +32,6 @@ export default function JavaSciptMoudle() {
                 <View className="title">4. constructor（不稳定）</View>
                 <View className="article">null 和 undefined 是无效的对象，因此是不会有 constructor 存在的。</View>
                 <View className="article">函数的 constructor 是不稳定的，当开发者重写 prototype 后，原有的 constructor 引用会丢失，constructor 会默认为 Object</View>
-                <code>123</code>
             </AtCard>
         </View>
     </>
